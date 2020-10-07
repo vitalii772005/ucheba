@@ -11,13 +11,6 @@ const personalObjert ={
     privat:false
 };
 
-//const a = prompt('Один из просмотренных последних фильмов?',''),
-//      B = prompt('На сколько оцените его',''),
-//      c = prompt('Один из просмотренных последних фильмов?',''),
-//      d = prompt('На сколько оцените его','');
-
-     // personalObjert.movies[a] = B;
-     // personalObjert.movies[c] = d;
 
       for (let i=0; i<2; i++) {
         const a = prompt('Один из просмотренных последних фильмов?',''),
@@ -31,8 +24,6 @@ const personalObjert ={
                  console.log('error');     
                  i--;
                 }
-              
-          if ()
      }
 
 
