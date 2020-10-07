@@ -16,3 +16,5 @@ function calc (a, b){
 console.log(calc(4,8));
 console.log(calc(9,10));
 console.log(calc(11,10));
+
+
