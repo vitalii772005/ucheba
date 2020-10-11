@@ -73,4 +73,55 @@ function MemberFilms(){
    
 //const num = 6;
 //(num===6) ? console.log ('ok') : console.log('error');
+// кол бэк функция, позволяет запускать очередной код только после предыдущего кода
+function learnJS(leng, callback){
+         console.log(`Я учу: ${leng}`)
+         callback();
+};
 
+function done(){
+      console.log('Я прошел этот урок');
+};
+
+
+learnJS("Javascript", done);
+
+
+//создание обьекта и работа с ним
+const newJS = {
+  name: 'Javascript',
+  height:1024,
+  colors:{
+    border:'black',
+    bg: 'blue'
+  },
+  makeTest: function sss(){
+    console.log('test');
+   }
+}
+newJS.makeTest();
+
+const  {border, bg} = newJS.colors;  //деструктуризация объекта
+    console.log(border);
+
+console.log(Object.keys(newJS).length);
+console.log(newJS['colors']);
+
+
+
+
+
+
+
+
+/*
+for (let key in newJS){  //получаю перебор объекта в значение key
+    if(typeof(newJS[key])==='object' ){
+    for (let i in newJS[key]){
+    console.log(`Свойство ${i} имеет значение ${newJS[key][i]}`);
+    }
+  } else {
+    console.log(`Свойство ${key} имеет значение ${newJS[key]}`);
+  }
+}
+*/
